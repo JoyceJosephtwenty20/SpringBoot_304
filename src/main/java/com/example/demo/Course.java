@@ -35,6 +35,13 @@ public class Course {
     public Course() {
     }
 
+    public Course(@Size(min = 4) String title, @Size(min = 3) String instructor, @Size(min = 10) String descripton, @Min(3) int credit) {
+        this.title = title;
+        this.instructor = instructor;
+        this.descripton = descripton;
+        this.credit = credit;
+    }
+
     public long getId() {
         return id;
     }
